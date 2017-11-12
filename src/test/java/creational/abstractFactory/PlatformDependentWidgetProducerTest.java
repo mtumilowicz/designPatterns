@@ -22,7 +22,7 @@ import static org.junit.Assert.assertEquals;
  * Created by mtumilowicz on 2017-11-11.
  */
 @RunWith(PowerMockRunner.class)
-@PrepareForTest(PlatformUtil.class )
+@PrepareForTest(PlatformUtil.class)
 public class PlatformDependentWidgetProducerTest {
 
     @Before
