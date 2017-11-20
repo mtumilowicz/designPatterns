@@ -6,7 +6,11 @@ import creational.factoryMethod.shape.*;
 /**
  * Created by mtumilowicz on 2017-11-11.
  */
-public class ShapeFactory {
+public final class ShapeFactory {
+
+    private ShapeFactory() {
+    }
+
     public static Shape get(ShapeType type) {
         Preconditions.checkArgument(type != null);
         
