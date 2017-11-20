@@ -16,8 +16,8 @@ import static org.junit.Assert.assertEquals;
 public class ShoppingCartTest {
     
     private final static ShoppingCart SHOPPING_CART = new ShoppingCart();
-    private final static Payment CREDIT_CARD_PAYMENT = new CreditCardPayment(
-            "1","1","1","1");
+    private final static Payment CREDIT_CARD_PAYMENT = new CreditCardPayment();
+    private final static Payment PAY_PAL_PAYMENT = new PayPalPayment();
     
     
     @Before
@@ -28,12 +28,12 @@ public class ShoppingCartTest {
     
     @Test
     public void creditCardPayment() {
-        assertEquals(PaymentType.CREDIT_CARD, SHOPPING_CART.pay(new CreditCardPayment("1","1","1","1")));
+        assertEquals(PaymentType.CREDIT_CARD, SHOPPING_CART.pay(CREDIT_CARD_PAYMENT));
     }
 
     @Test
     public void payPalPayment() {
-        assertEquals(PaymentType.PAY_PAL, SHOPPING_CART.pay(new PayPalPayment("1","1")));
+        assertEquals(PaymentType.PAY_PAL, SHOPPING_CART.pay(PAY_PAL_PAYMENT));
     }
     
 }

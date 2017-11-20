@@ -5,12 +5,7 @@ package behavioural.strategy.payment;
  */
 public class PayPalPayment extends AbstractPayment {
 
-    private final String email;
-    private final String password;
-
-    public PayPalPayment(String email, String password) {
+    public PayPalPayment() {
         super(PaymentType.PAY_PAL);
-        this.email = email;
-        this.password = password;
     }
 }
