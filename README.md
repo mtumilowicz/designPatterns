@@ -40,6 +40,13 @@ these two system into one - using adapter `FrenchPersonAdapter` that
 implements `IPerson`. So we have easy way to transform every Frenchman 
 to Englishman.
 ### bridge
+* theory: `bridge` is used when we want to separate abstractions from 
+technical implementation - implementation details could be changed 
+easily then.
+* example: We have two different implementations of music player: 
+`Spotify` and `Tidal` that differs in technical implementations, but 
+`AbstractMusicPlayer` that is used as a `bridge`, provides that we could
+easy switch between them.
 ### composite
 ### decorator
 ### facade
