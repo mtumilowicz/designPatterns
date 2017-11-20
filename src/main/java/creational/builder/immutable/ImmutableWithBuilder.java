@@ -5,12 +5,12 @@ import java.time.LocalDate;
 /**
  * Created by mtumilowicz on 2017-11-11.
  */
-public class Immutable {
+public class ImmutableWithBuilder {
     private String string;
     private Integer integer;
     private LocalDate localDate;
 
-    private Immutable(Builder builder) {
+    private ImmutableWithBuilder(Builder builder) {
         string = builder.string;
         integer = builder.integer;
         localDate = builder.localDate;
@@ -51,8 +51,8 @@ public class Immutable {
             return this;
         }
         
-        public Immutable build() {
-            return new Immutable(this);
+        public ImmutableWithBuilder build() {
+            return new ImmutableWithBuilder(this);
         }
     }
 }

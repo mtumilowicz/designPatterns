@@ -9,14 +9,14 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by mtumilowicz on 2017-11-11.
  */
-public class ImmutableTest {
+public class ImmutableWithBuilderTest {
     private static final String EXPECTED_STRING = "expected";
     private static final Integer EXPECTED_INTEGER = 1;
     private static final LocalDate EXPECTED_LOCAL_DATE = LocalDate.of(2000, 10, 10);
 
     @Test
     public void immutableWithString() {
-        Immutable test = new Immutable.Builder().string(EXPECTED_STRING).build();
+        ImmutableWithBuilder test = new ImmutableWithBuilder.Builder().string(EXPECTED_STRING).build();
 
         assertEquals(EXPECTED_STRING, test.getString());
         assertEquals(null, test.getInteger());
@@ -25,7 +25,7 @@ public class ImmutableTest {
 
     @Test
     public void immutableWithInteger() {
-        Immutable test = new Immutable.Builder().integer(EXPECTED_INTEGER).build();
+        ImmutableWithBuilder test = new ImmutableWithBuilder.Builder().integer(EXPECTED_INTEGER).build();
 
         assertEquals(null, test.getString());
         assertEquals(EXPECTED_INTEGER, test.getInteger());
@@ -34,7 +34,7 @@ public class ImmutableTest {
 
     @Test
     public void immutableWithLocalDate() {
-        Immutable test = new Immutable.Builder().localDate(EXPECTED_LOCAL_DATE).build();
+        ImmutableWithBuilder test = new ImmutableWithBuilder.Builder().localDate(EXPECTED_LOCAL_DATE).build();
 
         assertEquals(null, test.getString());
         assertEquals(null, test.getInteger());
@@ -43,7 +43,7 @@ public class ImmutableTest {
 
     @Test
     public void immutableAllFields() {
-        Immutable test = new Immutable.Builder()
+        ImmutableWithBuilder test = new ImmutableWithBuilder.Builder()
                 .string(EXPECTED_STRING)
                 .integer(EXPECTED_INTEGER)
                 .localDate(EXPECTED_LOCAL_DATE)
