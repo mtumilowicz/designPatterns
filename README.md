@@ -62,7 +62,7 @@ then copy whenever we need new object (`HelveticaFont`).
 * theory: `singleton` is used when we have to ensure that only one 
 object of a particular class is ever created, and all references refer
 to the same object.
-* code: We show `ThreadSafeSingleton`. Note that not every `singleton` 
+* code: `ThreadSafeSingleton`. Note that not every `singleton` 
 is thread safe, which is common mistake.
 
 ## structural
