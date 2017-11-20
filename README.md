@@ -41,6 +41,11 @@ have setters that allow chaining.
 For `mutable` objects we have `GenericBuilder` (using `java 8`) that 
 could be used for every `mutable` class.
 ### factory method
+* theory: `factory method` defines an interface for creating an object, 
+but leaves the choice of its type to the subclasses, creation being 
+deferred at run-time.
+* code: `ShapeFactory` produces different `Shapes` depending on 
+`ShapeType`
 ### prototype
 ### singleton
 
