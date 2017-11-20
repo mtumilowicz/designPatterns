@@ -34,7 +34,7 @@ used (it depend on which platform we are).
 construction of an object. Note that we could have two different types
 of objects (by their ability to change state): `immutable` and 
 `mutable`.
-* code: for `immutable` we have: `ImmutableWithBuilder` - we have 
+* code: For `immutable` we have: `ImmutableWithBuilder` - we have 
 private constructor that has a builder argument constructor and we have 
 static class `Builder` (with same fields that an original class) that 
 have setters that allow chaining.  
@@ -47,6 +47,13 @@ deferred at run-time.
 * code: `ShapeFactory` produces different `Shapes` depending on 
 `ShapeType`
 ### prototype
+* theory: `prototype` is used to instantiate a new object by copying all 
+of the fields of an existing object (construction of a new object could
+be time consuming).
+* code: We have `TimeConsumingCreationBaseFont` that construction takes
+two seconds (`TimeUnit.SECONDS.sleep(2)` in constructor), but this has 
+also `clone()` method, so we have to `prototype` object only once and 
+then copy whenever we need new object (`HelveticaFont`).
 ### singleton
 
 ## structural
