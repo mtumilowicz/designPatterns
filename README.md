@@ -20,6 +20,15 @@ Package of specific pattern is obtained using camel-case.
 All creational design patterns are in package: creational.*.  
 Package of specific pattern is obtained using camel-case.
 ### abstract factory
+* theory: `abstract factory` is an interface for creating families of 
+related or dependent objects without specifying their concrete classes.
+* code: We have two possible platforms - `Mac` and `MS`, and we have to
+produce desktop application that runs on either of them. As we know 
+widgets implementation differ on different platforms, so we have to
+encapsulate production of `windows` and `buttons` into 
+`PlatformDependentWidgetProducer` and in run-time we decide which 
+factory (`MsWindowsWidgetFactory` or `MacOSXWidgetFactory`) should be 
+used (it depend on which platform we are).
 ### builder
 ### factory method
 ### prototype
