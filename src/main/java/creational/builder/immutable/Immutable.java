@@ -1,4 +1,4 @@
-package creational.builder.classic;
+package creational.builder.immutable;
 
 import java.time.LocalDate;
 

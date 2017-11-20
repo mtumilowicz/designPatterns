@@ -1,4 +1,4 @@
-package creational.builder.generic;
+package creational.builder.mutable;
 
 import java.time.LocalDate;
 import java.util.Objects;

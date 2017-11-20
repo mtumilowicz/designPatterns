@@ -1,4 +1,4 @@
-package creational.builder.generic;
+package creational.builder.mutable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ public class GenericBuilder<T> {
 
     private List<Consumer<T>> instanceModifiers = new ArrayList<>();
 
-    public GenericBuilder(Supplier<T> instance) {
+    private GenericBuilder(Supplier<T> instance) {
         this.instance = instance;
     }
 

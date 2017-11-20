@@ -1,4 +1,4 @@
-package creational.builder.generic;
+package creational.builder.mutable;
 
 import org.junit.Test;
 

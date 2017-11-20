@@ -1,6 +1,5 @@
-package creational.builder.classic;
+package creational.builder.immutable;
 
-import creational.builder.classic.Immutable;
 import org.junit.Test;
 
 import java.time.LocalDate;
