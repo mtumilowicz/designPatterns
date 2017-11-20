@@ -9,7 +9,8 @@ import creational.abstractFactory.widget.window.Window;
 /**
  * Created by mtumilowicz on 2017-11-10.
  */
-public class MacOSXWidgetFactory implements AbstractWidgetFactory {
+public final class MacOSXWidgetFactory implements AbstractWidgetFactory {
+
     @Override
     public Window createWindow(){
         return new MacOSXWindow();

@@ -13,10 +13,13 @@ import com.sun.javafx.PlatformUtil;
 /**
  * Created by mtumilowicz on 2017-11-10.
  */
-public class PlatformDependentWidgetProducer {
+public final class PlatformDependentWidgetProducer {
     
     private static final GUIBuilder builder = new GUIBuilder();
-    
+
+    private PlatformDependentWidgetProducer() {
+    }
+
     public static Window window() {
         Window window = null;
         if(PlatformUtil.isMac()){

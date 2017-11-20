@@ -9,7 +9,8 @@ import creational.abstractFactory.widget.window.Window;
 /**
  * Created by mtumilowicz on 2017-11-10.
  */
-public class MsWindowsWidgetFactory implements AbstractWidgetFactory {
+public final class MsWindowsWidgetFactory implements AbstractWidgetFactory {
+    
     @Override
     public Window createWindow(){
         return new MSWindow();
