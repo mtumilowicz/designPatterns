@@ -77,4 +77,13 @@ https://github.com/mtumilowicz/reports#pdf-1
 `PdfCellBuilder` - easy builder for very complex task of building a pdf
 call.
 ### flyweight
+* theory: `flyweight` is used to reduce the memory (and time consuming 
+creation) usage for complex models using numerous, but the same objects.
+* code: We have immutable `Font` that has three factors: `name`, `size`,
+`color`. Creation of font could be time consuming task, so it's better 
+to cache already created fonts and reuse them. Simple reports could 
+demand thousands of different fonts. In `Font` class we have static 
+class `FlyweightFactory` that is responsible for creating and caching 
+`Font` object. Note that good practice is that `Font` is immutable and 
+has private constructor.
 ### proxy
