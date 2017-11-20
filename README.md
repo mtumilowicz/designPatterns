@@ -87,3 +87,15 @@ class `FlyweightFactory` that is responsible for creating and caching
 `Font` object. Note that good practice is that `Font` is immutable and 
 has private constructor.
 ### proxy
+* theory: `proxy` is a placeholder class that has plenty applications. 
+There are many different kind of `proxy`, but we decide to show only 
+`Cache Proxy`. A `cache proxy` improves the performance of long-running 
+tasks by caching request-answer. Note that answer should be always the 
+same for specific input. Good example are problems with prime numbers.  
+Other type of `proxy` is described here:
+https://developer.jboss.org/blogs/stuartdouglas/2010/10/12/weld-cdi-and-proxies
+* code: We have algorithm from my another project 
+(https://github.com/mtumilowicz/poligon#CountPrimes) that is already 
+optimal and lightning-fast, but we could shorten the time of receiving
+count using `proxy` (only first request is evaluated, others are taken
+from cache).
