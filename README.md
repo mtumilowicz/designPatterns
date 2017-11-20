@@ -57,14 +57,14 @@ every `Shape` could be decomposed to `BasicShapes`.
 * theory: `decorator` is used when we want to extend implementation in
 run-time (as an alternative to inheritance). It is obtain by wrapping
 classes in an object called `decorator`.
-* example: We have `BasicCar implements Car` that cost 1, and we want to
-have two upgrades: LuxuryCar and SportsCar. Using inheritance will cause
-a lot of problems - for example wiring dependencies between them (what
-in the case of another types, for example ConvertibleCar), so we decide
+* example: We have `BasicCar implements Car`, and we want to have two 
+upgrades: `LuxuryCar` and `SportsCar`. Using inheritance will cause a 
+lot of problems - for example wiring dependencies between them (what in 
+the case of another types, for example `ConvertibleCar`?!), so we decide
 to use `CarDecorator` and two appropriate classes that extends it: 
 `LuxuryCar`, `SportsCar`. Dependency is decoupled then - we could easily 
 make Luxury-Sport car and Sport-Luxury car (and they are, like in real 
-life, not the same!).
+life, not the same thing!).
 ### facade
 ### flyweight
 ### proxy
