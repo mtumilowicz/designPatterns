@@ -1,14 +1,13 @@
 package creational.abstractFactory;
 
+import com.sun.javafx.PlatformUtil;
 import creational.abstractFactory.widget.PlatformDependentWidgetProducer;
 import creational.abstractFactory.widget.button.Button;
-import creational.abstractFactory.widget.platform.Platform;
 import creational.abstractFactory.widget.platform.mac.button.MacOSXButton;
 import creational.abstractFactory.widget.platform.mac.window.MacOSXWindow;
 import creational.abstractFactory.widget.platform.ms.button.MSButton;
 import creational.abstractFactory.widget.platform.ms.window.MSWindow;
 import creational.abstractFactory.widget.window.Window;
-import com.sun.javafx.PlatformUtil;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -29,30 +28,6 @@ public class PlatformDependentWidgetProducerTest {
     public void setUp() {
         PowerMockito.mockStatic(PlatformUtil.class);
     }
-    
-    @Test
-    public void MacOSX_Window() {
-        Window window = PlatformDependentWidgetProducer.window(Platform.MAC);
-        assertEquals(MacOSXWindow.class, window.getClass());
-    }
-
-    @Test
-    public void MacOSX_Button() {
-        Button button = PlatformDependentWidgetProducer.button(Platform.MAC);
-        assertEquals(MacOSXButton.class, button.getClass());
-    }
-    
-    @Test
-    public void MS_Window() {
-        Window window = PlatformDependentWidgetProducer.window(Platform.MS);
-        assertEquals(MSWindow.class, window.getClass());
-    }
-
-    @Test
-    public void MS_Button() {
-        Button button = PlatformDependentWidgetProducer.button(Platform.MS);
-        assertEquals(MSButton.class, button.getClass());
-    }
 
     @Test
     public void MSPlatform_window() {
@@ -64,7 +39,7 @@ public class PlatformDependentWidgetProducerTest {
     @Test
     public void MSPlatform_button() {
         PowerMockito.when(PlatformUtil.isWindows()).thenReturn(true);
-        Button button = PlatformDependentWidgetProducer.button(Platform.MS);
+        Button button = PlatformDependentWidgetProducer.button();
         assertEquals(MSButton.class, button.getClass());
     }
 

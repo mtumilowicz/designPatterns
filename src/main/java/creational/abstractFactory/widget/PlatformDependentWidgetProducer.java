@@ -45,11 +45,11 @@ public class PlatformDependentWidgetProducer {
         return button;
     }
 
-    public static Window window(Platform platform) {
+    private static Window window(Platform platform) {
         return builder.buildWindow(getPlatformDesignedFactory(platform));
     }
 
-    public static Button button(Platform platform) {
+    private static Button button(Platform platform) {
         return builder.buildButton(getPlatformDesignedFactory(platform));
     }
     
