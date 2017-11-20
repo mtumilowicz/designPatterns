@@ -48,6 +48,11 @@ easily then.
 `AbstractMusicPlayer` that is used as a `bridge`, provides that we could
 easy switch between them.
 ### composite
+* theory: `composite` is used when creating hierarchical object models.
+It is used to provide that the individual objects and groups can be 
+accessed in the same manner.
+* example: We have `ComplexShape` that is a composition of `Shapes`, and
+every `Shape` could be decomposed to `BasicShapes`.
 ### decorator
 ### facade
 ### flyweight
