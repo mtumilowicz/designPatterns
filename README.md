@@ -59,6 +59,11 @@ two seconds (`TimeUnit.SECONDS.sleep(2)` in constructor), but this has
 also `clone()` method, so we have to `prototype` object only once and 
 then copy whenever we need new object (`HelveticaFont`).
 ### singleton
+* theory: `singleton` is used when we have to ensure that only one 
+object of a particular class is ever created, and all references refer
+to the same object.
+* code: We show `ThreadSafeSingleton`. Note that not every `singleton` 
+is thread safe, which is common mistake.
 
 ## structural
 All structural design patterns are in package: creational.*.  
