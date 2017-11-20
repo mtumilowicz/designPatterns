@@ -2,11 +2,13 @@
 The main goal of this project is to show basic design 
 patterns and provide real-life examples.  
 Solutions provided in the code are inspired by the wide-ranging internet
-search and know-how of the author.
+search and know-how of the author.  
 
 ## behavioural
 All behavioural design patterns are in package: behavioural.*.  
-Package of specific pattern is obtained using camel-case.
+Package of specific pattern is obtained using camel-case.  
+Every design pattern has been tested in `test` package (same naming 
+convention).
 ### chain of responsibility
 ### command
 ### interpreter
@@ -18,7 +20,9 @@ Package of specific pattern is obtained using camel-case.
 
 ## creational
 All creational design patterns are in package: creational.*.  
-Package of specific pattern is obtained using camel-case.
+Package of specific pattern is obtained using camel-case.  
+Every design pattern has been tested in `test` package (same naming 
+convention).
 ### abstract factory
 * theory: `abstract factory` is an interface for creating families of 
 related or dependent objects without specifying their concrete classes.
@@ -58,8 +62,9 @@ then copy whenever we need new object (`HelveticaFont`).
 
 ## structural
 All structural design patterns are in package: creational.*.  
-Package of specific pattern is obtained using camel-case.
-Package of specific pattern is obtained using camel-case.
+Package of specific pattern is obtained using camel-case.  
+Every design pattern has been tested in `test` package (same naming 
+convention).
 ### adapter
 * theory: `adapter` is used when we have two incompatible types and we 
 want to have a communication between them. When one class relies on 
