@@ -1,7 +1,5 @@
 package structural.facade.flight;
 
-import com.google.common.base.Preconditions;
-
 /**
  * Created by mtumilowicz on 2017-11-13.
  */
