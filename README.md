@@ -30,6 +30,16 @@ encapsulate production of `windows` and `buttons` into
 factory (`MsWindowsWidgetFactory` or `MacOSXWidgetFactory`) should be 
 used (it depend on which platform we are).
 ### builder
+* theory: `builder` is an external class that facilitates the 
+construction of an object. Note that we could have two different types
+of objects (by their ability to change state): `immutable` and 
+`mutable`.
+* code: for `immutable` we have: `ImmutableWithBuilder` - we have 
+private constructor that has a builder argument constructor and we have 
+static class `Builder` (with same fields that an original class) that 
+have setters that allow chaining.  
+For `mutable` objects we have `GenericBuilder` (using `java 8`) that 
+could be used for every `mutable` class.
 ### factory method
 ### prototype
 ### singleton
