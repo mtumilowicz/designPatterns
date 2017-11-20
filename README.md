@@ -66,5 +66,15 @@ to use `CarDecorator` and two appropriate classes that extends it:
 make Luxury-Sport car and Sport-Luxury car (and they are, like in real 
 life, not the same thing!).
 ### facade
+* theory: `facade` is used to define a simplified interface to a more 
+complex subsystem. It is also very useful when `API` is still under 
+construction and change rapidly, and we don't want to make perpetual 
+changes in our code.
+* code: We want to book hotel (`HotelBooking`) and flight 
+(`FlightBooking`) in one place (`TravelBooking`). More sophisticated and
+real life example is in my another project: 
+https://github.com/mtumilowicz/reports#pdf-1
+`PdfCellBuilder` - easy builder for very complex task of building a pdf
+call.
 ### flyweight
 ### proxy
