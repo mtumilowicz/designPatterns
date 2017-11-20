@@ -52,7 +52,7 @@ public class Font {
         private static final Map<String, Font> fontCache = new HashMap<>();
         
         public static Font getFont(FontName name, Integer size, Color color) {
-            String key = name + ", " + size + ", " + color;
+            String key = getKey(name, size, color);
             if (!fontCache.containsKey(key)) {
                 fontCache.put(key, new Font(name, size, color));
             }
