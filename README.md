@@ -74,7 +74,12 @@ on...).
 structure on which it operates. A practical result of this separation is 
 the ability to add new operations to existent object structures without 
 modifying the structures.
-* code: We have different configurations of different routers (DLinkRouter, LinkSysRouter)
+* code: We have different configurations (`LinuxConfigurator`, 
+`MacConfigurator`) of different routers (`DLinkRouter`, `LinkSysRouter`)
+and we could easily add another type configuration 
+(ex. `MSConfigurator`) 
+without changing code of `Routers`, and we could add another type of 
+`Router` without changing code of `Configurator` (`RouterVisitor`).
 
 ## creational
 All creational design patterns are in package: creational.*.  
