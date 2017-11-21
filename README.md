@@ -63,9 +63,9 @@ algorithm.
 * theory: `template method` is used to define an algorithm in a base 
 class using abstract operations that subclasses override to provide 
 concrete behavior.
-* code: We have `AbstractTrip` with `template method`: `performTrip()`
+* code: We have a class `Trip` with `template method`: `performTrip()`
 that call three abstract methods: `comingTransport()`, `daysSchedule()`,
-`returningTransport()`. As we see - `AbstractTrip` could be easily 
+`returningTransport()`. As we see - `Trip` could be easily 
 extended to `TwoDayTrip` (and in future, possibly `ThreeDayTrip` and so 
 on...).
 
