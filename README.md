@@ -45,6 +45,11 @@ of the existence of other objects.
 * code: We have a `ChatMediator` that facilitates sending messages 
 between `Users`.
 ### memento
+* theory: `mediator` is used to save the current state of an object 
+in such a manner that it can be restored at a later time without 
+breaking the rules of encapsulation.
+* code: We have a `TextEditor` with functionality of 
+`addWord(String word)`. If we make a mistake we call `undo()`.
 ### strategy
 ### template method
 ### visitor
