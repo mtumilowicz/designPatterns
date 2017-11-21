@@ -51,6 +51,14 @@ breaking the rules of encapsulation.
 * code: We have a `TextEditor` with functionality of 
 `addWord(String word)`. If we make a mistake we call `undo()`.
 ### strategy
+* theory: `strategy` is used to create an interchangeable family of 
+algorithms from which the required process is chosen at run-time. Most
+known example of `strategy` is 
+`Collections.sort(List<T> list, Comparator<? super T> c)`.
+* code: We have a `ShoppingCart` and we pay using `CreditCardPayment` or
+`PayPalPayment` (different algorithms). In the `ShoppingCart` we have a 
+method `pay(Payment method)` where we put appropriate payment 
+algorithm.
 ### template method
 ### visitor
 
