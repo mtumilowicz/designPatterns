@@ -38,6 +38,12 @@ to develop a grammar that enables us to answer such questions: check if
 questions like: check if `expression` contains 
 `word1 and (word2 or (word3 or word4))` (`SpecificInterpreter`).
 ### mediator
+* theory: `mediator` is used to reduce coupling between classes that 
+communicate with each other by developing mechanism to facilitate the 
+interaction between objects in a manner in which objects are not aware 
+of the existence of other objects.
+* code: We have a `ChatMediator` that facilitates sending messages 
+between `Users`.
 ### memento
 ### strategy
 ### template method
