@@ -1,15 +1,13 @@
 package behavioural.command.file;
 
-import behavioural.command.Command;
-
 /**
  * Created by mtumilowicz on 2017-11-20.
  */
 public class FileInvoker {
     
-    private final Command command;
+    private final FileCommand command;
 
-    public FileInvoker(Command c){
+    public FileInvoker(FileCommand c){
         this.command=c;
     }
 

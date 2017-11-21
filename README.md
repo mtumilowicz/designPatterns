@@ -27,6 +27,18 @@ at that point, all requests with either `size > 0 & size < 0` where
 handled, so the last case is `size = 0`) otherwise pushes them to the 
 end-point `successor`: `HandlerThirdImpl`.
 ### command
+* theory: `command` is used to encapsulate all information needed to 
+perform an action. Four terms always associated with the command pattern 
+are `command`, `receiver`, `invoker` and `client`:  
+`command` object knows about `receiver` and invokes a method of the 
+`receiver`.  
+`receiver` is stored in the `command` object by aggregation and  does 
+the work when the `execute()` method in `command` is called.  
+`invoker` object knows how to execute a `command`, but does not know 
+anything about a concrete `command`, it knows only about `command`
+interface.  
+`client` holds `invoker`, `command` and `receiver` objects.
+* code: 
 ### interpreter
 * theory: `interpreter` is used to define easily-extendable grammar for 
 instructions that form part of a language or notation.
