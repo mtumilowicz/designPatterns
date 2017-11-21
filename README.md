@@ -49,7 +49,7 @@ instructions that form part of a language or notation.
 * code: We have an `expression` containing words and spaces, and we want
 to develop a grammar that enables us to answer such questions: check if
 `expression` contains specific word `LiteralExpression` and furthermore 
-- we could connect questions with basic binary operators: 
+we could connect questions with basic binary operators: 
 `or` (`OrExpression`) & `and` (`AndExpression`) to compose more complex 
 questions like: check if `expression` contains 
 `word1 and (word2 or (word3 or word4))` (`SpecificInterpreter`).
@@ -128,7 +128,7 @@ could be used for every `mutable` class.
 but leaves the choice of its type to the subclasses, creation being 
 deferred at run-time.
 * code: `ShapeFactory` produces different `Shapes` depending on 
-`ShapeType`
+`ShapeType`.
 ### prototype
 * theory: `prototype` is used to instantiate a new object by copying all 
 of the fields of an existing object (construction of a new object could
