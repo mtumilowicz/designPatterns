@@ -1,12 +1,15 @@
-package behavioural.templateMethod;
+package behavioural.templateMethod.trip;
+
+import behavioural.templateMethod.place.PlaceType;
+import behavioural.templateMethod.transport.TransportType;
 
 /**
  * Created by mtumilowicz on 2017-11-20.
  */
-public class TwoDayTripSecondImpl extends TwoDayTrip {
+public class TwoDayTripFirstImpl extends TwoDayTrip {
     @Override
     PlaceType dayOne() {
-        return PlaceType.MOUNTAINS;
+        return PlaceType.SEA;
     }
 
     @Override
@@ -16,7 +19,7 @@ public class TwoDayTripSecondImpl extends TwoDayTrip {
 
     @Override
     public TransportType comingTransport() {
-        return TransportType.PLANE;
+        return TransportType.TRAIN;
     }
 
     @Override

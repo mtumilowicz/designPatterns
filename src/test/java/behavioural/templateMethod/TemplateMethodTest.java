@@ -1,5 +1,8 @@
 package behavioural.templateMethod;
 
+import behavioural.templateMethod.trip.TwoDayTrip;
+import behavioural.templateMethod.trip.TwoDayTripFirstImpl;
+import behavioural.templateMethod.trip.TwoDayTripSecondImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

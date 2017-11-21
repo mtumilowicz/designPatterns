@@ -1,4 +1,4 @@
-package behavioural.templateMethod;
+package behavioural.templateMethod.place;
 
 /**
  * Created by mtumilowicz on 2017-11-20.
