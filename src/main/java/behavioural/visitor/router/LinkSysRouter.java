@@ -5,7 +5,7 @@ import behavioural.visitor.RouterVisitor;
 /**
  * Created by mtumilowicz on 2017-11-20.
  */
-public class LinkSysRouter extends AbstractRouter {
+public class LinkSysRouter extends Router {
     
     public LinkSysRouter() {
         super(RouterType.LINK_SYS);

@@ -5,7 +5,7 @@ import behavioural.visitor.RouterVisitor;
 /**
  * Created by mtumilowicz on 2017-11-20.
  */
-public class DLinkRouter extends AbstractRouter {
+public class DLinkRouter extends Router {
 
     public DLinkRouter() {
         super(RouterType.D_LINK);
