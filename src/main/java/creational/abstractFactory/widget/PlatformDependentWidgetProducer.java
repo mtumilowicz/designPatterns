@@ -2,7 +2,7 @@ package creational.abstractFactory.widget;
 
 import creational.abstractFactory.widget.builder.GUIBuilder;
 import creational.abstractFactory.widget.button.Button;
-import creational.abstractFactory.widget.factory.AbstractWidgetFactory;
+import creational.abstractFactory.widget.factory.WidgetFactory;
 import creational.abstractFactory.widget.platform.Platform;
 import creational.abstractFactory.widget.platform.mac.factory.MacOSXWidgetFactory;
 import creational.abstractFactory.widget.platform.ms.factory.MsWindowsWidgetFactory;
@@ -56,8 +56,8 @@ public final class PlatformDependentWidgetProducer {
         return builder.buildButton(getPlatformDesignedFactory(platform));
     }
     
-    private static AbstractWidgetFactory getPlatformDesignedFactory(Platform platform) {
-        AbstractWidgetFactory widgetFactory;
+    private static WidgetFactory getPlatformDesignedFactory(Platform platform) {
+        WidgetFactory widgetFactory;
         
         switch (platform) {
             case MS:
