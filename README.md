@@ -38,7 +38,11 @@ the work when the `execute()` method in `command` is called.
 anything about a concrete `command`, it knows only about `command`
 interface.  
 `client` holds `invoker`, `command` and `receiver` objects.
-* code: 
+* code: We have different platforms (Mac and Windows) and we want to
+perform action on files (open, write, close). So we have `FileCommand`: 
+`OpenFileCommand`, `WriteFileCommand`, `CloseFileCommand`, platform 
+dependent `FileSystemReceiver`: `MacFileSystemReceiver` and 
+`WindowsFileSystemReceiver`, and for invoking commands: `FileInvoker`.
 ### interpreter
 * theory: `interpreter` is used to define easily-extendable grammar for 
 instructions that form part of a language or notation.
