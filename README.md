@@ -70,6 +70,11 @@ extended to `TwoDayTrip` (and in future, possibly `ThreeDayTrip` and so
 on...).
 
 ### visitor
+* theory: `visitor` is a way of separating an algorithm from an object 
+structure on which it operates. A practical result of this separation is 
+the ability to add new operations to existent object structures without 
+modifying the structures.
+* code: We have different configurations of different routers (DLinkRouter, LinkSysRouter)
 
 ## creational
 All creational design patterns are in package: creational.*.  
