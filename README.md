@@ -28,6 +28,15 @@ handled, so the last case is `size = 0`) otherwise pushes them to the
 end-point `successor`: `HandlerThirdImpl`.
 ### command
 ### interpreter
+* theory: `interpreter` is used to define easily-extendable grammar for 
+instructions that form part of a language or notation.
+* code: We have an `expression` containing words and spaces, and we want
+to develop a grammar that enables us to answer such questions: check if
+`expression` contains specific word `LiteralExpression` and furthermore 
+- we could connect questions with basic binary operators: 
+`or` (`OrExpression`) & `and` (`AndExpression`) to compose more complex 
+questions like: check if `expression` contains 
+`word1 and (word2 or (word3 or word4))` (`SpecificInterpreter`).
 ### mediator
 ### memento
 ### strategy
