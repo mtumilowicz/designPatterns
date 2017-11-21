@@ -3,6 +3,9 @@ The main goal of this project is to show basic design
 patterns and provide real-life examples.  
 Solutions provided in the code are inspired by the wide-ranging internet
 search and know-how of the author.  
+Valuable references:  
+http://www.blackwasp.co.uk/GofPatterns.aspx  
+http://www.oodesign.com/
 
 ## behavioural
 All behavioural design patterns are in package: behavioural.*.  
@@ -10,6 +13,19 @@ Package of specific pattern is obtained using camel-case.
 Every design pattern has been tested in `test` package (same naming 
 convention).
 ### chain of responsibility
+* theory: `chain of responsibility` is used to process varied requests, 
+each of which may be dealt with by a different handler.
+The most usual example of a machine using the `chain of 
+responsibility` is the vending machine coin slot: rather than having a 
+slot for each type of coin, the machine has only one slot for all of 
+them.
+* code: We have `Request` with `size` field, and handlers extending 
+`Handler` (with `Handler` field `successor`): `HandlerFirstImpl` process
+requests of positive size otherwise pushes them to the `successor`: 
+`HandlerSecondImpl`, which process requests of negative size (note that 
+at that point, all requests with either `size > 0 & size < 0` where 
+handled, so the last case is `size = 0`) otherwise pushes them to the 
+end-point `successor`: `HandlerThirdImpl`.
 ### command
 ### interpreter
 ### mediator
