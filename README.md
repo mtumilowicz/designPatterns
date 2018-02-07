@@ -76,7 +76,6 @@ in such a manner that it can be restored at a later time without
 breaking the rules of encapsulation.
 * code: We have a `TextEditor` with functionality of 
 `addWord(String word)`. If we make a mistake we call `undo()`.
-* Java SE example: `TO-DO`
 
 ### strategy
 * theory: `strategy` is used to create an interchangeable family of 
@@ -87,7 +86,8 @@ known example of `strategy` is
 `PayPalPayment` (different algorithms). In the `ShoppingCart` we have a 
 method `pay(Payment method)` where we put appropriate payment 
 algorithm.
-* Java SE example: `TO-DO`
+* Java SE example: `java.util.Collections#
+sort(List<T> list, Comparator<? super T> c)`
 
 ### template method
 * theory: `template method` is used to define an algorithm in a base 
@@ -98,7 +98,8 @@ that call three abstract methods: `comingTransport()`, `daysSchedule()`,
 `returningTransport()`. As we see - `Trip` could be easily 
 extended to `TwoDayTrip` (and in future, possibly `ThreeDayTrip` and so 
 on...).
-* Java SE example: `TO-DO`
+* Java SE example: `java.io.InputStream
+#read(byte b[], int off, int len)`
 
 ### visitor
 * theory: `visitor` is a way of separating an algorithm from an object 
@@ -111,7 +112,7 @@ and we could easily add another type configuration
 (ex. `MSConfigurator`) 
 without changing code of `Routers`, and we could add another type of 
 `Router` without changing code of `Configurator` (`RouterVisitor`).
-* Java SE example: `TO-DO`
+* Java SE example: `java.nio.file.SimpleFileVisitor`
 
 ## creational
 All creational design patterns are in package: creational.*.  
@@ -129,7 +130,6 @@ encapsulate production of `windows` and `buttons` into
 `PlatformDependentWidgetProducer` and in run-time we decide which 
 factory (`MsWindowsWidgetFactory` or `MacOSXWidgetFactory`) should be 
 used (it depend on which platform we are).
-* Java SE example: `TO-DO`
 
 ### builder
 * theory: `builder` is an external class that facilitates the 
@@ -197,7 +197,6 @@ easily then.
 `Spotify` and `Tidal` that differs in technical implementations, but 
 `AbstractMusicPlayer` that is used as a `bridge`, provides that we could
 easy switch between them.
-* Java SE example: `TO-DO`
 
 ### composite
 * theory: `composite` is used when creating hierarchical object models.
@@ -232,7 +231,6 @@ real life example is in my another project:
 https://github.com/mtumilowicz/reports#pdf-1
 `PdfCellBuilder` - easy builder for very complex task of building a pdf
 call.
-* Java SE example: `TO-DO`
 
 ### flyweight
 * theory: `flyweight` is used to reduce the memory (and time consuming 
@@ -259,4 +257,3 @@ https://developer.jboss.org/blogs/stuartdouglas/2010/10/12/weld-cdi-and-proxies
 optimal and lightning-fast, but we could shorten the time of receiving
 count using `proxy` (only first request is evaluated, others are taken
 from cache).
-* Java SE example: `TO-DO`
