@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/mtumilowicz/designPatterns.svg?branch=master)](https://travis-ci.com/mtumilowicz/designPatterns)
 # designPatterns
 The main goal of this project is to show basic design 
 patterns and provide real-life examples.  
