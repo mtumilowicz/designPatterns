@@ -258,3 +258,6 @@ https://developer.jboss.org/blogs/stuartdouglas/2010/10/12/weld-cdi-and-proxies
 optimal and lightning-fast, but we could shorten the time of receiving
 count using `proxy` (only first request is evaluated, others are taken
 from cache).
+
+# tests
+*Coverage*: `91%`
