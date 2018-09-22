@@ -112,7 +112,7 @@ modifying the structures.
 and we could easily add another type configuration 
 (ex. `MSConfigurator`) 
 without changing code of `Routers`, and we could add another type of 
-`Router` without changing code of `Configurator` (`RouterVisitor`).
+`Router` by simply modifying code of `Configurator` (`RouterVisitor`).
 * Java SE example: `java.nio.file.SimpleFileVisitor`
 
 ## creational
