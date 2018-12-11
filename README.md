@@ -45,7 +45,7 @@ interface.
 * code: We have different platforms (Mac and Windows) and we want to
 perform action on files (open, write, close). We have platform 
 dependent `FileSystemReceiver` (interface with methods
-open / write / close) implementations: `MacFileSystemReceiver` and 
+open, write, close) implementations: `MacFileSystemReceiver` and 
 `WindowsFileSystemReceiver`. For invoking commands: `FileInvoker`.
 * Java SE example: `all implementations of java.lang.Runnable`
 
