@@ -6,9 +6,9 @@ import java.time.LocalDate;
  * Created by mtumilowicz on 2017-11-11.
  */
 public class ImmutableWithBuilder {
-    private String string;
-    private Integer integer;
-    private LocalDate localDate;
+    private final String string;
+    private final Integer integer;
+    private final LocalDate localDate;
 
     private ImmutableWithBuilder(Builder builder) {
         string = builder.string;

@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by mtumilowicz on 2017-11-20.
  */
-public class ShoppingCart {
+class ShoppingCart {
     
     private final List<Item> items = new LinkedList<>();
 

@@ -27,6 +27,6 @@ public class MusicPlayerProviderTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void nullMusicPlayerType() {
-        MusicPlayerProvider musicPlayerProvider = MusicPlayerProvider.Factory.get(null);
+        MusicPlayerProvider.Factory.get(null);
     }
 }

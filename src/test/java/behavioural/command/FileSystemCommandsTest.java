@@ -13,8 +13,8 @@ import static org.junit.Assert.assertEquals;
  */
 public class FileSystemCommandsTest {
     
-    private FileSystemReceiver windowsReceiver = new WindowsFileSystemReceiver();
-    private FileSystemReceiver macReceiver = new MacFileSystemReceiver();
+    private final FileSystemReceiver windowsReceiver = new WindowsFileSystemReceiver();
+    private final FileSystemReceiver macReceiver = new MacFileSystemReceiver();
     
     @Test
     public void windowsOpenFile() {

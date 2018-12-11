@@ -3,9 +3,7 @@ package structural.flyweight;
 import org.junit.Test;
 import structural.flyweight.Font.FlyweightFactory;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * Created by mtumilowicz on 2017-11-19.
@@ -53,12 +51,10 @@ public class FontTest {
     
     @Test
     public void checkCache() {
-        assertTrue(FlyweightFactory.getFont(EXPECTED_FONT_NAME, 
-                EXPECTED_FONT_SIZE, 
-                EXPECTED_FONT_COLOR) 
-                == 
-        FlyweightFactory.getFont(EXPECTED_FONT_NAME, 
-                EXPECTED_FONT_SIZE, 
+        assertSame(FlyweightFactory.getFont(EXPECTED_FONT_NAME,
+                EXPECTED_FONT_SIZE,
+                EXPECTED_FONT_COLOR), FlyweightFactory.getFont(EXPECTED_FONT_NAME,
+                EXPECTED_FONT_SIZE,
                 EXPECTED_FONT_COLOR));
     }
 }

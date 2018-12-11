@@ -6,7 +6,7 @@ import java.util.Objects;
 /**
  * Created by mtumilowicz on 2017-11-11.
  */
-public class ToBuild {
+class ToBuild {
     private String string;
     private Integer integer;
     private LocalDate localDate;

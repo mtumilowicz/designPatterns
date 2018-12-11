@@ -13,7 +13,7 @@ public class GenericBuilder<T> {
 
     private final Supplier<T> instance;
 
-    private List<Consumer<T>> instanceModifiers = new ArrayList<>();
+    private final List<Consumer<T>> instanceModifiers = new ArrayList<>();
 
     private GenericBuilder(Supplier<T> instance) {
         this.instance = instance;

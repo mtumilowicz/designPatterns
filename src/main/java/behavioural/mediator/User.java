@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by mtumilowicz on 2017-11-20.
  */
-public class User {
+class User {
     
     private final ChatMediator mediator;
     private final String name;

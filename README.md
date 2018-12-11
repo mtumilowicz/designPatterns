@@ -181,7 +181,7 @@ convention).
 ### adapter
 * theory: `adapter` is used when we have two incompatible types and we 
 want to have a communication between them. When one class relies on 
-the interface that the other doesn't implement - `adapter` is a 
+the interface that the other does not implement - `adapter` is a 
 translator between them.  
 * example: We have two incompatible interfaces of the same purpose: one in 
 english (`IPerson`), one in french (`IFrenchPerson`) - we integrate 

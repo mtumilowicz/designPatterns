@@ -6,7 +6,7 @@ import creational.factoryMethod.shape.*;
 /**
  * Created by mtumilowicz on 2017-11-11.
  */
-public final class ShapeFactory {
+final class ShapeFactory {
 
     private ShapeFactory() {
     }

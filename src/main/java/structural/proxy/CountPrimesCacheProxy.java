@@ -6,7 +6,7 @@ import java.util.Objects;
 /**
  * Created by mtumilowicz on 2017-11-19.
  */
-public class CountPrimesCacheProxy {
+class CountPrimesCacheProxy {
     
     private static final HashMap<Key, Integer> cache = new HashMap<>();
 

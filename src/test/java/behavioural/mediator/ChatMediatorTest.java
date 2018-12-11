@@ -3,7 +3,6 @@ package behavioural.mediator;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 /**
  * Created by mtumilowicz on 2017-11-20.
@@ -23,8 +22,8 @@ public class ChatMediatorTest {
         
         String msg = "test";
         user1.send("test");
-        
-        assertTrue(user1.getMessagesSent().size() == 1);
+
+        assertEquals(1, user1.getMessagesSent().size());
         assertEquals(msg, user1.getMessagesSent().get(0));
     }
 
@@ -42,14 +41,14 @@ public class ChatMediatorTest {
         String msg = "test";
         user1.send("test");
 
-        assertTrue(user1.getMessagesSent().size() == 1);
+        assertEquals(1, user1.getMessagesSent().size());
         assertEquals(msg, user1.getMessagesSent().get(0));
-        assertTrue(user1.getMessagesReceived().size() == 0);
+        assertEquals(0, user1.getMessagesReceived().size());
 
-        assertTrue(user2.getMessagesReceived().size() == 1);
+        assertEquals(1, user2.getMessagesReceived().size());
         assertEquals(msg, user2.getMessagesReceived().get(0));
 
-        assertTrue(user3.getMessagesReceived().size() == 1);
+        assertEquals(1, user3.getMessagesReceived().size());
         assertEquals(msg, user3.getMessagesReceived().get(0));
     }
 }

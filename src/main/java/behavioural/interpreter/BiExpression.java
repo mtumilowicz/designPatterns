@@ -7,8 +7,8 @@ import com.google.common.base.Preconditions;
  */
 public abstract class BiExpression implements Expression {
     
-    protected final Expression first;
-    protected final Expression second;
+    final Expression first;
+    final Expression second;
 
     BiExpression(Expression first, Expression second) {
         Preconditions.checkArgument(first != null);

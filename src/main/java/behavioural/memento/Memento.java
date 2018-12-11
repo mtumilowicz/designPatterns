@@ -3,7 +3,7 @@ package behavioural.memento;
 /**
  * Created by mtumilowicz on 2017-11-19.
  */
-public class Memento {
+class Memento {
     private final String memo;
 
     public Memento(String memo) {

@@ -7,7 +7,7 @@ import java.util.Objects;
 /**
  * Created by mtumilowicz on 2017-11-20.
  */
-public class ChatMediator {
+class ChatMediator {
     
     private final List<User> users = new ArrayList<>();
     

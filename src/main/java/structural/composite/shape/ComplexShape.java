@@ -12,11 +12,11 @@ import java.util.stream.Collectors;
  */
 public class ComplexShape implements Shape {
     
-    private List<Shape> constituents = new LinkedList<>();
+    private final List<Shape> constituents = new LinkedList<>();
     
-    public boolean addConstituent(Shape shape) {
+    public void addConstituent(Shape shape) {
         Preconditions.checkArgument(shape != null);
-        return constituents.add(shape);
+        constituents.add(shape);
     }
     
     @Override

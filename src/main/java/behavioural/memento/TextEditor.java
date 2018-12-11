@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by mtumilowicz on 2017-11-19.
  */
-public class TextEditor {
+class TextEditor {
     private StringBuilder sb = new StringBuilder();
     private final List<Memento> mementos = new ArrayList<>();
     
