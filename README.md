@@ -84,7 +84,7 @@ subject, maintains a list of other objects, which are its
 observers. When the state of the subject changes, its 
 observers are notified.
 * code: We have subject `Earth` with observers: `AsteroidObserver`, 
-`SpaceStationObserver` that observe `FlyingObject` (with specific 
+`SpaceStationObserver` that observe `FlyingObject` (with appropriate 
 `FlyingObjectType`) that `fly` near `Earth`.
 
 ### strategy
