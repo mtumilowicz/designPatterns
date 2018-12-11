@@ -78,6 +78,15 @@ breaking the rules of encapsulation.
 * code: We have a `TextEditor` with functionality of 
 `addWord(String word)`. If we make a mistake we call `undo()`.
 
+### observer
+* theory: In the observer pattern, an object, called the
+subject, maintains a list of other objects, which are its 
+observers. When the state of the subject changes, its 
+observers are notified.
+* code: We have subject `Earth` with observers: `AsteroidObserver`, 
+`SpaceStationObserver` that observe `FlyingObject` with specific
+`FlyingObjectType`.
+
 ### strategy
 * theory: `strategy` is used to create an interchangeable family of 
 algorithms from which the required process is chosen at run-time. Most
