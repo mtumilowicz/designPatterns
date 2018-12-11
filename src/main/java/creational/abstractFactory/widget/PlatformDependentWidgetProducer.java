@@ -16,8 +16,8 @@ public final class PlatformDependentWidgetProducer {
     private final GUIBuilder builder = new GUIBuilder();
     private final WidgetFactory widgetFactory;
 
-    public PlatformDependentWidgetProducer(Platform platform) {
-        this.widgetFactory = getPlatformDesignedFactory(platform);
+    private PlatformDependentWidgetProducer(WidgetFactory widgetFactory) {
+        this.widgetFactory = widgetFactory;
     }
 
     public Window window() {
@@ -28,7 +28,7 @@ public final class PlatformDependentWidgetProducer {
         return builder.buildButton(widgetFactory);
     }
 
-    private static WidgetFactory getPlatformDesignedFactory(Platform platform) {
+    public static PlatformDependentWidgetProducer getPlatformDesignedFactory(Platform platform) {
         WidgetFactory widgetFactory;
 
         switch (platform) {
@@ -42,6 +42,6 @@ public final class PlatformDependentWidgetProducer {
                 throw new IllegalArgumentException("Platform not supported: " + platform);
         }
 
-        return widgetFactory;
+        return new PlatformDependentWidgetProducer(widgetFactory);
     }
 }

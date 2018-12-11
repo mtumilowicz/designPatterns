@@ -17,8 +17,10 @@ import static org.junit.Assert.assertEquals;
  */
 public class PlatformDependentWidgetProducerTest {
 
-    private final PlatformDependentWidgetProducer forMs = new PlatformDependentWidgetProducer(Platform.MS);
-    private final PlatformDependentWidgetProducer forMac = new PlatformDependentWidgetProducer(Platform.MAC);
+    private final PlatformDependentWidgetProducer forMs =
+            PlatformDependentWidgetProducer.getPlatformDesignedFactory(Platform.MS);
+    private final PlatformDependentWidgetProducer forMac =
+            PlatformDependentWidgetProducer.getPlatformDesignedFactory(Platform.MAC);
 
     @Test
     public void MSPlatform_window() {
