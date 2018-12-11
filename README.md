@@ -43,10 +43,10 @@ anything about a concrete `command`, it knows only about `command`
 interface.  
 `client` holds `invoker`, `command` and `receiver` objects.
 * code: We have different platforms (Mac and Windows) and we want to
-perform action on files (open, write, close). So we have `FileCommand`: 
-`OpenFileCommand`, `WriteFileCommand`, `CloseFileCommand`, platform 
-dependent `FileSystemReceiver`: `MacFileSystemReceiver` and 
-`WindowsFileSystemReceiver`, and for invoking commands: `FileInvoker`.
+perform action on files (open, write, close). We have platform 
+dependent `FileSystemReceiver` (interface with methods
+open / write / close) implementations: `MacFileSystemReceiver` and 
+`WindowsFileSystemReceiver`. For invoking commands: `FileInvoker`.
 * Java SE example: `all implementations of java.lang.Runnable`
 
 ### interpreter

@@ -10,15 +10,15 @@ public abstract class FileSystemReceiver {
         this.type = type;
     }
 
-    public String openFile() {
+    public String open() {
         return type + ", " + FileOperationType.OPEN;
     }
 
-    public String writeFile() {
+    public String write() {
         return type + ", " + FileOperationType.WRITE;
     }
 
-    public String closeFile() {
+    public String close() {
         return type + ", " + FileOperationType.CLOSE;
     }
 }
