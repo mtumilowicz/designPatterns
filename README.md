@@ -85,7 +85,7 @@ observers. When the state of the subject changes, its
 observers are notified.
 * code: We have subject `Earth` with observers: `AsteroidObserver` 
 and `SpaceStationObserver` that observe `FlyingObject` 
-(with appropriate `FlyingObjectType`) that `fly` near `Earth`.
+(with appropriate `FlyingObjectType`) `flying` near `Earth`.
 
 ### strategy
 * theory: `strategy` is used to create an interchangeable family of 
