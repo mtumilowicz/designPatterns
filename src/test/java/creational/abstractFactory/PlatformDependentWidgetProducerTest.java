@@ -2,7 +2,6 @@ package creational.abstractFactory;
 
 import creational.abstractFactory.widget.PlatformDependentWidgetProducer;
 import creational.abstractFactory.widget.button.Button;
-import creational.abstractFactory.widget.platform.Platform;
 import creational.abstractFactory.widget.platform.mac.button.MacOSXButton;
 import creational.abstractFactory.widget.platform.mac.window.MacOSXWindow;
 import creational.abstractFactory.widget.platform.ms.button.MSButton;
@@ -18,9 +17,9 @@ import static org.junit.Assert.assertEquals;
 public class PlatformDependentWidgetProducerTest {
 
     private final PlatformDependentWidgetProducer forMs =
-            PlatformDependentWidgetProducer.getPlatformDesignedFactory(Platform.MS);
+            PlatformDependentWidgetProducer.ms();
     private final PlatformDependentWidgetProducer forMac =
-            PlatformDependentWidgetProducer.getPlatformDesignedFactory(Platform.MAC);
+            PlatformDependentWidgetProducer.mac();
 
     @Test
     public void MSPlatform_window() {

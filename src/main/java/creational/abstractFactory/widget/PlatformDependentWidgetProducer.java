@@ -19,6 +19,14 @@ public final class PlatformDependentWidgetProducer {
     private PlatformDependentWidgetProducer(WidgetFactory widgetFactory) {
         this.widgetFactory = widgetFactory;
     }
+    
+    public static PlatformDependentWidgetProducer ms() {
+        return getPlatformDesignedFactory(Platform.MS);
+    }
+
+    public static PlatformDependentWidgetProducer mac() {
+        return getPlatformDesignedFactory(Platform.MAC);
+    }
 
     public Window window() {
         return builder.buildWindow(widgetFactory);
@@ -28,7 +36,7 @@ public final class PlatformDependentWidgetProducer {
         return builder.buildButton(widgetFactory);
     }
 
-    public static PlatformDependentWidgetProducer getPlatformDesignedFactory(Platform platform) {
+    private static PlatformDependentWidgetProducer getPlatformDesignedFactory(Platform platform) {
         WidgetFactory widgetFactory;
 
         switch (platform) {
