@@ -9,18 +9,18 @@ import java.util.function.Supplier;
  */
 public abstract class Trip {
 
-    private final Supplier<TransportType> comingTransport;
-    private final Supplier<TransportType> returningTransport;
+    private final Supplier<TransportType> destinationTransport;
+    private final Supplier<TransportType> homeTransport;
 
-    protected Trip(Supplier<TransportType> comingTransport,
-                   Supplier<TransportType> returningTransport) {
-        this.comingTransport = comingTransport;
-        this.returningTransport = returningTransport;
+    protected Trip(Supplier<TransportType> destinationTransport,
+                   Supplier<TransportType> homeTransport) {
+        this.destinationTransport = destinationTransport;
+        this.homeTransport = homeTransport;
     }
 
     abstract String daysSchedule();
 
     public String performTrip() {
-        return comingTransport.get() + ", " + daysSchedule() + ", " + returningTransport.get();
+        return destinationTransport.get() + ", " + daysSchedule() + ", " + homeTransport.get();
     }
 }

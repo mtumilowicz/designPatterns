@@ -14,12 +14,12 @@ public class TwoDayTrip extends Trip {
     private final Supplier<PlaceType> dayTwo;
 
     public TwoDayTrip(
-            Supplier<TransportType> comingTransport,
+            Supplier<TransportType> destinationTransport,
             Supplier<PlaceType> dayOne,
             Supplier<PlaceType> dayTwo,
-            Supplier<TransportType> returningTransport
+            Supplier<TransportType> homeTransport
     ) {
-        super(comingTransport, returningTransport);
+        super(destinationTransport, homeTransport);
         this.dayOne = dayOne;
         this.dayTwo = dayTwo;
     }

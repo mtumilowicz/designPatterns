@@ -103,12 +103,25 @@ sort(List<T> list, Comparator<? super T> c)`
 * theory: `template method` is used to define an algorithm in a base 
 class using abstract operations that subclasses override to provide 
 concrete behavior.
-* code: We have a class `Trip` with `template method`: `performTrip()`
-that call three abstract methods: `comingTransport()`, `daysSchedule()`,
-`returningTransport()`. As we see - `Trip` could be easily 
-extended to `TwoDayTrip` (and in future, possibly `ThreeDayTrip` and so 
-on...).
-* Java SE example: `java.io.InputStream
+* code: We have a base class `Trip` with template method
+`performTrip()` that consists of: 
+    1. `destinationTransport` (start)
+    1. `daysSchedule` (vacations)
+    1. `homeTransport` (end)
+    
+    We provide `TwoDayTrip extends Trip` and we can compose
+    two day trip like (we provide methods implementations
+    in constructor):
+    ```
+    TwoDayTrip twoDayTrip = new TwoDayTrip(
+            () -> TransportType.TRAIN,
+            () -> PlaceType.SEA,
+            () -> PlaceType.SEA,
+            () -> TransportType.PLANE
+    );
+    ```
+    
+* Java SE example: `java.io.InputStream`
 #read(byte b[], int off, int len)`
 
 ### visitor
