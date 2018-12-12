@@ -120,8 +120,7 @@ concrete behavior.
     );
     ```
     
-* Java SE example: `java.io.InputStream`
-#read(byte b[], int off, int len)`
+* Java SE example: `java.io.InputStream #read(byte b[], int off, int len)`
 
 ### visitor
 * theory: `visitor` is a way of separating an algorithm from an object 
