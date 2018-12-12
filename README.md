@@ -110,8 +110,7 @@ concrete behavior.
     1. `homeTransport` (end)
     
     We provide `TwoDayTrip extends Trip` and we can compose
-    two day trip like (we provide methods implementations
-    in constructor):
+    two day trip like:
     ```
     TwoDayTrip twoDayTrip = new TwoDayTrip(
             () -> TransportType.TRAIN,
