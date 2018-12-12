@@ -101,7 +101,7 @@ sort(List<T> list, Comparator<? super T> c)`
 
 ### template method
 * theory: `template method` is used to define an algorithm in a base 
-class using abstract operations that subclasses override to provide 
+class using abstract operations that subclasses provide with
 concrete behavior.
 * code: We have a base class `Trip` with template method
 `performTrip()` that consists of: 
